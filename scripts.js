@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const loginForm = document.getElementById("login-form");
     const loginLink = document.getElementById("login-link");
 
-    // Check if the user is already logged in
+   
     const isLoggedIn = localStorage.getItem("loggedInUser");
     if (isLoggedIn) {
         loginLink.innerText = "Logout";
@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
         loginLink.href = "login.html";
     }
 
-    // Handle login form submission
+//handle login
     if (loginForm) {
         loginForm.addEventListener("submit", function(event) {
             event.preventDefault();
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
             const username = document.getElementById("username").value;
             const password = document.getElementById("password").value;
 
-            // Basic validation (in a real app, you'd authenticate with a backend)
+            
             if (username === "user" && password === "password") {
                 localStorage.setItem("loggedInUser", username);
                 window.location.href = "index.html"; // Redirect to the home page after login
