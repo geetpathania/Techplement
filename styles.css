@@ -151,7 +151,7 @@ footer {
     margin-bottom: 40px;
 }
 
-/* Center the contact section contents */
+
 #contact {
     display: flex;
     flex-direction: column;
@@ -177,7 +177,7 @@ footer {
 
 #contact form {
     max-width: 500px; 
-    width: 100%; /* Make form responsive */
+    width: 100%; /*  form responsive */
 }
 
 #contact form div {
